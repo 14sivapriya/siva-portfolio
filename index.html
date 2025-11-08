@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siva Priya SS | Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Typed.js for typing effect -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("RQvComjkyK3G3I2td"); // your public key
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Top navigation / Navbar -->
+  <header class="top-nav" id="navbar">
+    <div class="nav-container">
+      <div class="logo">Siva Priya SS</div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+      <nav class="nav-menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / HEADER -->
+  <section class="header section" id="home">
+    <div class="header-container">
+      <div class="profile-pic">
+        <img src="profile.jpg" alt="Profile Picture" />
+      </div>
+      <div class="intro">
+        <h1>HI, I'M <span>SIVA PRIYA SS</span></h1>
+        <h2><span id="typed"></span></h2>
+        <p>
+          I build professional and modern websites. Passionate about web development and eager to adapt to new technologies.
+        </p>
+        <div class="buttons">
+          <a href="#contact" class="btn hire-btn">Hire Me</a>
+          <a href="your-cv.pdf" class="btn cv-btn" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a B.Tech IT student with knowledge in Python, C, HTML, JavaScript, SQL.  
+        I have completed internships in web development.
+        I am a Frontend developer (HTML, CSS, JS) with interest in MERN stack.  
+        I am interested in web development and eager to learn new technologies to adapt to company requirements.  
+        I am familiar with GitHub, database management, and technical skills like programming, frameworks, and version control.  
+        My soft skills include quick learning, adaptability, teamwork, and strong communication.  
+        Achievements: Advanced to 2nd round in Hackathon competitions, presenting technical papers at inter-college symposiums.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-name">Python</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">C</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">HTML</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">CSS</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">SQL / Database Management</div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Git </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>This very site you’re viewing. <a href="https://14sivapriya.github.io/Portfolio/" target="_blank">Live Demo</a> | <a href="https://github.com/14sivapriya/portfolio" target="_blank">Code</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-details">
+          <p>📧 Email: <a href="mailto:14sivapriya@gmail.com">14sivapriya@gmail.com</a></p>
+          <p>📱 Phone: <a href="tel:+919043057175">+91 90430 57175</a></p>
+          <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/sivapriya006/" target="_blank">View Profile</a></p>
+          <p>💻 GitHub: <a href="https://github.com/14sivapriya" target="_blank">View Projects</a></p>
+        </div>
+    <form 
+      id="contact-form" 
+      name="contact" 
+      method="POST" 
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <!-- Honeypot field for bots -->
+      <p style="display:none">
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <div class="input-group">
+        <input type="text" id="name" name="name" required />
+        <label for="name">Your Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" name="email" required />
+        <label for="email">Your Email</label>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+
+      <button type="submit" class="btn primary">Send Message</button>
+      <p id="form-status" aria-live="polite"></p>
+    </form>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/sivapriya006/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/14sivapriya" target="_blank">GitHub</a> |
+        <a href="mailto:14sivapriya@gmail.com">Email</a>
+      </div>
+      <p>© 2025 Siva Priya SS | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
